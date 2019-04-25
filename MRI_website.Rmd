@@ -1,0 +1,17 @@
+---
+title: "MRI"
+author: "Anna van der Heijden"
+date: "25-4-2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(papayar)
+library(oro.nifti)
+template <- readNIfTI("/Users/annavanderheijden/Documents/Notities Project Atlas/Data template project/ahead_final_iqr_r1map_n104.nii.gz", reorient=FALSE)
+papaya(list(template))
+```
